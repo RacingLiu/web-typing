@@ -1,0 +1,82 @@
+body{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(247,247,247);
+}
+
+h1{
+    text-align: center;
+}
+
+#div_head{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /*background-color: rgb(230,230,230);*/
+    background: linear-gradient(to bottom , rgb(12,133,187), rgb(85,177,206)); 
+    font-weight: bold;
+    color: white;
+    font-size: 1.8em;
+}
+
+#div_head > *{
+    margin: 5px 10px 5px 10px;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+#div_article{
+    font-size: 22px;
+    width: 50vw;
+    height: 40vh;
+    padding: 15px;
+    margin: 5px auto ; 
+    background-color: rgb(255,255,255);
+    display:inline-block;
+    overflow: scroll;
+}
+
+.wordsUndo{
+    border-radius: 5px;
+    margin:0px 1px 8px 0px;
+    background-color: transparent;
+    color:rgb(74,74,74);
+}
+
+.wordsNext{
+    border-radius: 5px;
+    margin:0px 1px 8px 0px;
+    background-color: transparent;
+    color: rgb(53,151,220);
+    animation: borderBlink 1.5s infinite; 
+}
+
+@keyframes borderBlink {
+    0% {
+        border-bottom: 2px solid transparent; /* 透明底边 */
+    }
+    50% {
+        border-bottom: 2px solid rgb(53,151,220);; /* 红色底边 */
+    }
+    100% {
+        border-bottom: 2px solid transparent; /* 透明底边 */
+    }
+}
+
+.wordsTrue{
+    border-radius: 5px;
+    margin:0px 1px 8px 0px;
+    background-color: rgb(235,250,231);
+    color:rgb(153,199,148);
+}
+
+.wordsFalse{
+    border-radius: 5px;
+    margin:0px 1px 8px 0px;
+    background-color: rgb(255,220,217);
+    color:rgb(213,91,96);
+}
